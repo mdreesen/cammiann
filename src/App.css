@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+/* Homepage */
+.homepageBackgroundImg {
+  /* position: absolute;
+  background-size: cover;
+  display: block;
+  z-index: 1;
+  */
+  position: relative;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  border: 0;
+  justify-content: center;
+}
+
+.navButtons {
+  justify-content: space-around;
+}
