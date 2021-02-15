@@ -1,27 +1,47 @@
-const { Schema, model } = require('mongoose');
-const dateFormat = require('../utils/dateFormat');
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
 
-const thoughtSchema = new Schema(
-  {
-    thoughtText: {
-      type: String,
-      required: 'Need to at least write something Cammi...Gosh',
-      minlength: 1,
-      maxlength: 280
+// Create the User's Post model
+class Post extends Model {}
+
+// Fields and Columns for Post model
+Post.init({
+    id: {
+        // Use the special Sequelize DataTypes object
+        type: DataTypes.INTEGER,
+
+        // Cannot be Null
+        allowNull: false,
+
+        // id is the primary key
+        primaryKey: true,
+
+        // Increments when the data is made
+        autoIncrement: true
     },
-    createdAt: {
-      type: Date,
-      default: Date.now,
-      get: timestamp => dateFormat(timestamp)
+    user_id: {
+        type: DataTypes.INTEGER,
+        references: {
+            model: 'user',
+            key: 'id'
+        }
     },
-    username: {
-      type: String,
-      required: true
+    // Trying to conceive
+    title: {
+        type: DataTypes.STRING,
+
+        allowNull: true,
     },
-  },
-);
+    post: {
+        type: DataTypes.STRING,
 
+        allowNull: false
+    }
+}, {
+    sequelize,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'post'
+});
 
-const Thought = model('Thought', thoughtSchema);
-
-module.exports = Thought;
+module.exports = Post;

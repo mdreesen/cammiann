@@ -1,34 +1,27 @@
 const express = require('express');
-// import the ApolloServer
-const { ApolloServer } = require('apollo-server-express');
+const routes = require('./routes');
+const sequelize = require('./config/connection');
+const path = require('path');
 
-// import typeDefs and resolvers
-const { typeDefs, resolvers } = require('./schemas');
-
-// connection to the db
-const db = require('./config/connection');
-
-// middleware for db connection
-const PORT = process.env.PORT || 3001;
 const app = express();
+const PORT = process.env.PORT || 3001;
 
-// create new Apollo server and pass in our schema data
-const server = new ApolloServer({
-    typeDefs,
-    resolvers
-});
-
-// integrate our Apollo server with teh express application as middleware
-server.applyMiddleware({ app });
-
-app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-db.once('open', () => {
-  app.listen(PORT, () => {
-      // API server port
-    console.log(`API server running on port ${PORT}!`);
-    // Graphql server port
-    console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`)
-  });
+// turn on routes
+app.use(routes);
+
+// turn on connection to db and server
+// force: true drops the db
+sequelize.sync({ force: true }).then(() => {
+    if (process.env.NODE_ENV === 'production') {
+        app.use(express.static(path.join(__dirname, '../client/build')));
+      }
+      
+      app.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, '../client/build/index.html'));
+      });
+      
+    app.listen(PORT, () => console.log(`Now Listening on PORT ${PORT}`));
 });
