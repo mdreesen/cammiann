@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import backgroundImage from '../../images/sydney-angove-Gqe9_JlU8ks-unsplash.jpg';
+
+// importing component
 
 function Home() {
     return(
@@ -9,6 +11,7 @@ function Home() {
             </section>
             <section>
                 <div>This could be some blog posts?</div>
+                <div></div>
             </section>
         </div>
     );
