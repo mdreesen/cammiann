@@ -14,7 +14,7 @@ app.use(routes);
 
 // turn on connection to db and server
 // force: true drops the db
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
     if (process.env.NODE_ENV === 'production') {
         app.use(express.static(path.join(__dirname, '../client/build')));
       }
