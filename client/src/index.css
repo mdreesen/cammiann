@@ -7,6 +7,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.backgroundColor {
+  /* background: linear-gradient(90deg, rgba(255,245,233,1) 0%, rgba(255,255,255,0) 100%); */
+  background: #FFF5E9;
+}
+
+section {
+  height: 100vh;
+}
+
+/* Homepage */
+.homeContainer {
+  height: 100vh;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

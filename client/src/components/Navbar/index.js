@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
+  MuiAppBar: {
+    background: '#da995f'
+  }
 }));
 
 export default function ButtonAppBar() {
@@ -28,7 +31,7 @@ export default function ButtonAppBar() {
         <Toolbar className="navButtons">
           <Button href="/" color="inherit">Home</Button>
           <Button href="/about" color="inherit">About</Button>
-          <Button color="inherit">Login</Button>
+          <Button href="/login" color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
     </div>
