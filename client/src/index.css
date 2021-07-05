@@ -21,6 +21,10 @@ section {
   height: 100vh;
 }
 
+.parallax-content {
+  height: 100vh;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
