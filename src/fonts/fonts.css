@@ -1,0 +1,8 @@
+@font-face {
+    src: url('./Prestige-Signature-Script.ttf');
+    font-family: "Prestige Signature Script";
+}
+
+h1 {
+    font-family: "Prestige Signature Script";
+}

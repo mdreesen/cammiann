@@ -4,6 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 
 import './navbar.css';
+import '../../fonts/fonts.css'
 
 export default function ButtonAppBar() {
 
