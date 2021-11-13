@@ -7,6 +7,10 @@ import Button from '@material-ui/core/Button';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    color: "black"
+  },
+  MuiAppBar: {
+    backgroundColor: "black"
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -15,15 +19,13 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   MuiAppBar: {
-    background: '#da995f'
+    background: '#da995f',
+    colorPrimary: "black"
   }
 }));
 
 export default function ButtonAppBar() {
   const classes = useStyles();
-
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
 
   return (
     <div className={classes.root}>
