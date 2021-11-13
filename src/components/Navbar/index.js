@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
@@ -11,7 +11,9 @@ export default function ButtonAppBar() {
   return (
     <div className="navbar">
       <AppBar position="static">
-      <h1>CammiAnn</h1>
+        <div className="name_container">
+          <h1>CammiAnn</h1>
+        </div>
         <Toolbar className="navButtons">
           <Button href="/" color="inherit">Home</Button>
           <div className="nav_divider"></div>

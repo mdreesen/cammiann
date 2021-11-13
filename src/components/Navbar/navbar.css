@@ -15,7 +15,7 @@
 .MuiAppBar-root {
     top: 0 !important;
     flex-direction: row !important;
-    justify-content: end !important;
+    justify-content: space-between !important;
 }
 
 h1 {
