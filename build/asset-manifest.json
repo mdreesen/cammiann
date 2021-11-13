@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2d69623d.chunk.css",
+    "main.js": "/static/js/main.6b3183a3.chunk.js",
+    "main.js.map": "/static/js/main.6b3183a3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a668552e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a668552e.js.map",
+    "static/js/2.60969d88.chunk.js": "/static/js/2.60969d88.chunk.js",
+    "static/js/2.60969d88.chunk.js.map": "/static/js/2.60969d88.chunk.js.map",
+    "static/js/3.94386df5.chunk.js": "/static/js/3.94386df5.chunk.js",
+    "static/js/3.94386df5.chunk.js.map": "/static/js/3.94386df5.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.2d69623d.chunk.css.map": "/static/css/main.2d69623d.chunk.css.map",
+    "static/js/2.60969d88.chunk.js.LICENSE.txt": "/static/js/2.60969d88.chunk.js.LICENSE.txt",
+    "static/media/cammiOne.0ce39f08.jpg": "/static/media/cammiOne.0ce39f08.jpg",
+    "static/media/cammiThree.f69aad25.jpg": "/static/media/cammiThree.f69aad25.jpg",
+    "static/media/cammiTwo.56bea0bf.jpg": "/static/media/cammiTwo.56bea0bf.jpg",
+    "static/media/homepage.8dd780de.webp": "/static/media/homepage.8dd780de.webp",
+    "static/media/homepageTwo.54b64214.webp": "/static/media/homepageTwo.54b64214.webp",
+    "static/media/sydney-angove-Gqe9_JlU8ks-unsplash.593af6de.jpg": "/static/media/sydney-angove-Gqe9_JlU8ks-unsplash.593af6de.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a668552e.js",
+    "static/js/2.60969d88.chunk.js",
+    "static/css/main.2d69623d.chunk.css",
+    "static/js/main.6b3183a3.chunk.js"
+  ]
+}
