@@ -5,3 +5,23 @@
 .home_container {
     background: #FFF5E9;
 }
+
+.title_color_background {
+    height: 50vh;
+    display: flex;
+    background-color: white;
+}
+
+.title_white_background{
+    height: 50vh;
+    display: flex;
+    background: #FFF5E9;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110px;
+    align-items: center;
+    display: flex;
+    padding: 20px;    
+}

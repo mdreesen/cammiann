@@ -3,6 +3,16 @@
     font-family: "Prestige Signature Script";
 }
 
+@font-face {
+    src: url('./RecordaScript.ttf');
+    font-family: "RecordaScript";
+}
+
 h1 {
     font-family: "Prestige Signature Script";
+}
+
+.title {
+    font-family: "RecordaScript";
+    /* font-family: "Prestige Signature Script"; */
 }

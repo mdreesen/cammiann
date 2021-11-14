@@ -7,25 +7,41 @@ import homepage from '../../images/homepage.webp';
 import homepagetwo from '../../images/homepageTwo.webp';
 
 import './home.css'
+import data from '../../utils/data.json';
 
 
 import { Parallax } from 'react-parallax';
+import { DirectiveLocation } from 'graphql';
 
-// importing component
+const Home = () => {
 
-function Home() {
+    const HomeData = () => {
+        return data?.home?.map((t, index) => {
+            return t.title
+        })
+    }
+
+
     return (
         <div className='home_container backgroundColor'>
             <section>
                 <Parallax bgImage={cammiImageThree} strength={200}>
                     <div className="parallax-content"></div>
                 </Parallax>
-            </section>
-            <section>
-                <div className="title_section">
-                    <h2>This could be something about bread or whatever</h2>
+                <div className="home_title_container">
+                    {
+                        data?.home?.map((t, index) => {
+                            const assetSwitch = index % 2 === 0 ? 'left' : 'right';
+                            const colorSwitch = index % 2 === 0 ? 'title_color_background' : 'title_white_background';
+                            return (
+                                <div className={colorSwitch}>
+                                    <div className={assetSwitch}></div>
+                                    <div className="title">{t.title}</div>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
-                <div></div>
             </section>
         </div>
     );

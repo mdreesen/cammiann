@@ -18,6 +18,10 @@
     justify-content: space-between !important;
 }
 
+.MuiButton-label {
+    font-weight: 400;
+}
+
 h1 {
     /* font-family: 'Satisfy', sans-serif; */
     font-family: "Prestige Signature Script";
