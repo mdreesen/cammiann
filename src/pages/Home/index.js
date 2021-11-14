@@ -33,11 +33,14 @@ const Home = () => {
                         data?.home?.map((t, index) => {
                             const assetSwitch = index % 2 === 0 ? 'left' : 'right';
                             const colorSwitch = index % 2 === 0 ? 'title_color_background' : 'title_white_background';
-                            
+
                             return (
                                 <div className={colorSwitch}>
                                     <div className={`asset_${assetSwitch}`}></div>
-                                    <div className="title">{t.title}</div>
+                                    <div className="text_container">
+                                        <div className="title">{t.title}</div>
+                                        <p>{t.description}</p>
+                                    </div>
                                 </div>
                             )
                         })
