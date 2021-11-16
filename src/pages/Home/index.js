@@ -11,7 +11,6 @@ import data from '../../utils/data.json';
 
 
 import { Parallax } from 'react-parallax';
-import { DirectiveLocation } from 'graphql';
 
 const Home = () => {
 
