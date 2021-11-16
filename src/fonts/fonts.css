@@ -11,6 +11,12 @@
 h1 {
     font-family: "Prestige Signature Script";
 }
+@media only screen and (max-width: 600px) {
+ h1 {
+     font-size: 33px;
+     margin-top: 6px;
+ }
+}
 
 .title {
     font-family: "RecordaScript";
