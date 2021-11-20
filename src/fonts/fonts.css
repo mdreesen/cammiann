@@ -8,11 +8,11 @@
     font-family: "RecordaScript";
 }
 
-h1 {
+.nav_name {
     font-family: "Prestige Signature Script";
 }
 @media only screen and (max-width: 600px) {
- h1 {
+.nav_name {
      font-size: 33px;
      margin-top: 6px;
  }

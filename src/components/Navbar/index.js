@@ -11,13 +11,13 @@ export default function ButtonAppBar() {
   return (
     <div className="navbar">
       <AppBar position="static">
-        <div className="name_container">
-          <h1>CammiAnn</h1>
+        <div className="nav_name_container">
+          <h1 className="nav_name">CammiAnn</h1>
         </div>
         <Toolbar className="navButtons">
           <Button href="/" color="inherit">Home</Button>
-          <div className="nav_divider"></div>
-          <Button href="/about" color="inherit">About</Button>
+          {/* <div className="nav_divider"></div>
+          <Button href="/about" color="inherit">About</Button> */}
           <div className="nav_divider"></div>
           <Button href="/blog" color="inherit">Blog</Button>
           <div className="nav_divider"></div>
