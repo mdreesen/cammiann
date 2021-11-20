@@ -19,6 +19,8 @@ export default function ButtonAppBar() {
           <div className="nav_divider"></div>
           <Button href="/about" color="inherit">About</Button>
           <div className="nav_divider"></div>
+          <Button href="/blog" color="inherit">Blog</Button>
+          <div className="nav_divider"></div>
           <Button href="/about" color="inherit">Products</Button>
         </Toolbar>
       </AppBar>

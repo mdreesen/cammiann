@@ -1,7 +1,6 @@
 import sanityClient from '@sanity/client';
-import { Source } from 'graphql';
 
 export default sanityClient({
-    productId: process.env.ID,
+    projectId: "zbot6uab",
     dataset: "production"
 });
